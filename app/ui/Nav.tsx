@@ -10,12 +10,15 @@ const Navigation = () => {
   };
   console.log(theme);
   return (
-    <nav className=" backdrop-blur-sm font-semibold bg-transparent flex flex-row justify-between px-4 py-4">
-      <Link href="/" className={`${quicksand.className} text-4xl`}>
+    <nav className=" backdrop-blur-sm font-semibold bg-transparent flex flex-row justify-between px-4 py-8">
+      <Link
+        href="/"
+        className={`${quicksand.className} text-4xl px-4 md:px-10`}
+      >
         LPU~MAP
       </Link>
 
-      <button className="" onClick={() => handleTheme()}>
+      <button className="px-4 " onClick={() => handleTheme()}>
         {theme === "light" ? (
           <div>
             <MoonIcon className="w-8 h-8 text-noire hover:text-primary" />
