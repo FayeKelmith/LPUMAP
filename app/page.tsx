@@ -15,7 +15,7 @@ export default function Home() {
         <Lottie animationData={animationData} loop={true} />
       </div>
       <section className="">
-        <div className="mx-auto flex md:flex-row flex-col">
+        <div className="mx-auto flex md:flex-row flex-col justify-between">
           <Link href="/map" className={imageStyling}>
             <Image
               src="/images/samosa.png"
