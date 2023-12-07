@@ -13,6 +13,7 @@ const config: Config = {
         blank: "#f5f7fa",
         grey: "#e5ebf3",
         noire: "#121212",
+        primary: "#22A699",
       },
     },
   },
