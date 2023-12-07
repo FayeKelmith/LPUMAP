@@ -2,6 +2,7 @@
 import Lottie from "lottie-react";
 import animationData from "@/public/animations/hello-greeting.json";
 import Image from "next/image";
+import Link from "next/link";
 export default function Home() {
   const imageWidth = 300;
   const imageHeight = 300;
@@ -15,7 +16,7 @@ export default function Home() {
       </div>
       <section className="">
         <div className="mx-auto flex md:flex-row flex-col">
-          <div className={imageStyling}>
+          <Link href="/map" className={imageStyling}>
             <Image
               src="/images/samosa.png"
               alt="Samosa"
@@ -23,8 +24,8 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </div>
-          <div className={imageStyling}>
+          </Link>
+          <Link href="/map" className={imageStyling}>
             <Image
               src="/images/help-desk.png"
               alt="Help Desk"
@@ -32,8 +33,8 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </div>
-          <div className={imageStyling}>
+          </Link>
+          <Link href="/map" className={imageStyling}>
             <Image
               src="/images/hostel.png"
               alt="Accomodation"
@@ -41,8 +42,8 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </div>
-          <div className={imageStyling}>
+          </Link>
+          <Link href="/map" className={imageStyling}>
             <Image
               src="/images/conference.png"
               alt="Events"
@@ -50,7 +51,7 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </div>
+          </Link>
         </div>
       </section>
     </div>

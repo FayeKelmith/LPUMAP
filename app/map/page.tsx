@@ -2,7 +2,7 @@ import LPUMap from "@/app/ui/Map";
 import Link from "next/link";
 const MapPage = () => {
   return (
-    <main className="text-4xl container mx-auto">
+    <main className="text-4xl container mx-auto pt-20">
       <div>
         <h1 className="text-3xl py-10 text-center">Campus Map</h1>
       </div>
