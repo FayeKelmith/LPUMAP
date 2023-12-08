@@ -6,7 +6,7 @@ const MapPage = () => {
       <div>
         <h1 className="text-3xl py-4 text-center">I&apos;ll lead you there.</h1>
       </div>
-      <div className=" my-10">
+      <div className=" my-10 mx-auto">
         <LPUMap />
       </div>
       <div className="w-full text-center">

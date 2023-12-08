@@ -8,7 +8,6 @@ const Navigation = () => {
   const handleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
-  console.log(theme);
   return (
     <nav className=" backdrop-blur-sm font-semibold bg-transparent flex flex-row justify-between px-4 py-8">
       <Link
