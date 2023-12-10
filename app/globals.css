@@ -7,3 +7,7 @@
     @apply dark:bg-noire bg-blank text-black dark:text-blank;
   }
 }
+
+.mapboxgl-popup-content {
+  padding: 0 !important;
+}

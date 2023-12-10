@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/providers.jsx"
+    "app/providers.jsx",
+    "app/ui/Map.js"
   ],
   "exclude": ["node_modules"]
 }
