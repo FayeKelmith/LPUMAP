@@ -13,7 +13,7 @@ export default function Home() {
       </div>
       <section className="">
         <div className="mx-auto flex md:flex-row flex-col justify-between">
-          <Link href="/map" className={imageStyling}>
+          <div className={imageStyling}>
             <Image
               src="/images/samosa.png"
               alt="Samosa"
@@ -21,8 +21,8 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </Link>
-          <Link href="/map" className={imageStyling}>
+          </div>
+          <div className={imageStyling}>
             <Image
               src="/images/help-desk.png"
               alt="Help Desk"
@@ -30,8 +30,8 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </Link>
-          <Link href="/map" className={imageStyling}>
+          </div>
+          <div className={imageStyling}>
             <Image
               src="/images/hostel.png"
               alt="Accomodation"
@@ -39,8 +39,8 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </Link>
-          <Link href="/map" className={imageStyling}>
+          </div>
+          <div className={imageStyling}>
             <Image
               src="/images/conference.png"
               alt="Events"
@@ -48,7 +48,7 @@ export default function Home() {
               objectFit="cover"
               objectPosition="center"
             />
-          </Link>
+          </div>
         </div>
       </section>
     </div>
