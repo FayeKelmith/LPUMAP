@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Map, {
   Marker,
   Popup,
@@ -9,11 +9,14 @@ import Map, {
 import { CiLocationOn } from "react-icons/ci";
 import data from "../data.json";
 import "mapbox-gl/dist/mapbox-gl.css";
-
 const academics = data.academic;
+
+// create a function to make a directions request
 const LPUMap = () => {
   const mapboxToken = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
   const [viewport, setViewport] = useState({});
+  const mapRef = useRef();
+
   useEffect(() => {
     navigator.geolocation.getCurrentPosition((pos) => {
       setViewport({
@@ -28,6 +31,7 @@ const LPUMap = () => {
     <main className="w-full h-[60vh]">
       {viewport.latitude && viewport.longitude && (
         <Map
+          ref={mapRef}
           mapboxAccessToken={mapboxToken}
           mapStyle="mapbox://styles/mapbox/streets-v12"
           initialViewState={viewport}
